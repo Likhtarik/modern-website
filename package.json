@@ -1,11 +1,11 @@
 {
-    "name": "metaverse13",
+    "name": "lexaaa",
     "version": "0.1.0",
     "private": true,
     "homepages": "https://likhtarik.github.io/modern-website/",
     "scripts": {
         "dev": "next dev",
-        "build": "next build",
+        "build": "next build && next export",
         "start": "next start",
         "lint": "next lint",
         "deploy": "gh-pages -d build",

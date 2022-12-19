@@ -6,7 +6,7 @@ import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => (
-    <section className="sm:py-16 xs:py-8 py-12 sm:pl-16 pl-6">
+    <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
         <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -22,9 +22,9 @@ const Hero = () => (
                     variants={textVariant(1.2)}
                     className="flex flex-row justify-center items-center"
                 >
-                    <h1 className={`${styles.heroHeading}`}>Ma</h1>
-                    <div className={styles.heroDText}></div>
-                    <h1 className={`${styles.heroHeading}`}>Ness</h1>
+                    <h1 className={styles.heroHeading}>Ma</h1>
+                    <div className={styles.heroDText} />
+                    <h1 className={styles.heroHeading}>Ness</h1>
                 </motion.div>
             </div>
 
@@ -33,9 +33,10 @@ const Hero = () => (
                 className="relative w-full md:-mt-[20px] -mt-[12px]"
             >
                 <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
+
                 <img
                     src="/cover.png"
-                    alt="cover"
+                    alt="hero_cover"
                     className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
                 />
 
@@ -44,7 +45,7 @@ const Hero = () => (
                         <img
                             src="/stamp.png"
                             alt="stamp"
-                            className="sm-w-[155px] w-[100px] sm:h[155px] h-[100px] object-contain"
+                            className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
                         />
                     </div>
                 </a>
